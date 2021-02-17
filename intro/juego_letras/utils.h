@@ -32,10 +32,12 @@ char preguntar_letra(int jugador_actual) {
   char result;
   std::cout << "Jugador " << jugador_actual << ": ";
   std::cin >> result;
+  std:: cout << std::endl;
 
   while (result < 'A' || result > 'Z') {
     std::cout << "Letra no válida. Prueba otra vez: ";
     std::cin >> result;
+    std:: cout << std::endl;
   }
   return result;
 }
